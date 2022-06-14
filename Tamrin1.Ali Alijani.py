@@ -1,8 +1,4 @@
 #User Name 
-from ast import alias
-from traceback import print_tb
-
-
 userFirstName = input(" Pls Enter Your First Name : ")
 userFamilyName = input("Pls Enter Your Family Name :  ")
 
