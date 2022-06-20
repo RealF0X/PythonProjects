@@ -1,5 +1,20 @@
 #Password Entry
 
+
+
+
+#Warning
+#This Entry Has Mistakes Pls Refer To Version2 Of This Code
+
+
+
+
+
+
+
+
+
+
 userPassword = input("Pls Enter A Password : ")
 
 #1)if for 8 Characters
