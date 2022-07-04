@@ -16,10 +16,10 @@ while True :
     
     #Condition For Search
     elif userChoice == "2" : 
-        userSearch = input(f"\nPls Enter The Name You Want to Search : ")
+        userSearch = input(f"\nPls Enter The Name or The Number You Want to Search : ")
         searchValue = False
         for i in phoneBook : 
-            if userSearch == i.split(":")[0] :
+            if userSearch == i.split(":")[0] or userSearch == i.split(":")[1] :
                 searchValue == True 
                 print(f"\nYour Search is {i} \n")
             elif searchValue != True :
@@ -28,11 +28,10 @@ while True :
                      
     #Condition For Delete
     elif userChoice == "3" :
-        deleteName = input("\nPls Enter The Name You Want to Delete :").lower()
+        deleteName = input("\nPls Enter The Name or The Number You Want to Delete :").lower()
         for i in phoneBook : 
-            if deleteName == i.split(":")[0] or deleteName == i.split(":"):
-                phoneBook.remove(i)    
-                print(phoneBook)  
+            if deleteName == i.split(":")[0] or deleteName == i.split(":")[1]:
+                phoneBook.remove(i)     
             else :
                 print("\nNot Found\n")  
                 break      
