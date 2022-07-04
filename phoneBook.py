@@ -12,7 +12,7 @@ while True :
         numberInput = input("Pls Enter The Number : ").lower()
         fullInfo = nameInput + ":" + numberInput
         phoneBook.append(fullInfo)
-        print(phoneBook)
+       
     
     #Condition For Search
     elif userChoice == "2" : 
