@@ -1,0 +1,157 @@
+import os
+os.system("cls")
+import turtle
+
+#General Settings
+window = turtle.Screen()
+window.title("XO Game")
+window.setup(500,500)
+window.bgcolor("yellow")
+brush = turtle.Turtle()
+brush.shape("arrow")
+brush.shapesize(1,1)
+brush.color("black")
+brush.speed(6)
+brush.width(3)
+# brush.ht()
+
+
+#Draw Table:
+brush.penup()
+brush.goto(75,-150)
+brush.pendown()
+brush.lt(90)
+brush.fd(300)
+
+brush.penup()
+brush.goto(-75,-150)
+brush.pendown()
+brush.fd(300)
+
+brush.penup()
+brush.goto(-200,-50)
+brush.pendown()
+brush.rt(90)
+brush.fd(400)
+
+brush.penup()
+brush.goto(-200,50)
+brush.pendown()
+brush.fd(400)
+
+
+
+
+
+
+#1st o
+brush.penup()
+brush.goto(0,75)
+brush.pendown()
+brush.color("red")
+brush.begin_fill()
+brush.circle(30)
+brush.end_fill()
+
+
+
+
+#1st X
+brush.penup()
+brush.goto(-30,-30)
+brush.pendown()
+brush.color("blue")
+brush.goto(30,30)
+brush.penup()
+brush.goto(30,-30)
+brush.pendown()
+brush.goto(-30,30)
+
+#2nd o
+brush.penup()
+brush.goto(150,75)
+brush.pendown()
+brush.color("red")
+brush.begin_fill()
+brush.circle(30)
+brush.end_fill()
+
+#2nd X
+brush.penup()
+brush.goto(-175,125)
+brush.pendown()
+brush.color("blue")
+brush.goto(-125,75)
+brush.penup()
+brush.goto(-125,125)
+brush.pendown()
+brush.goto(-175,75)
+
+
+
+#3d o
+brush.penup()
+brush.goto(0,-125)
+brush.pendown()
+brush.color("red")
+brush.begin_fill()
+brush.circle(30)
+brush.end_fill()
+
+#3d X
+brush.penup()
+brush.goto(-175,-125)
+brush.pendown()
+brush.color("blue")
+brush.goto(-125,-75)
+brush.penup()
+brush.goto(-125,-125)
+brush.pendown()
+brush.goto(-175,-75)
+
+
+#4th o
+brush.penup()
+brush.goto(-150,-25)
+brush.pendown()
+brush.color("red")
+brush.begin_fill()
+brush.circle(30)
+brush.end_fill()
+
+#4th X
+brush.penup()
+brush.goto(175,-125)
+brush.pendown()
+brush.color("blue")
+brush.goto(125,-75)
+brush.penup()
+brush.goto(125,-125)
+brush.pendown()
+brush.goto(175,-75)
+
+
+#5th o
+brush.penup()
+brush.goto(150,-25)
+brush.pendown()
+brush.color("red")
+brush.begin_fill()
+brush.circle(30)
+brush.end_fill()
+
+#Winung Line
+brush.penup()
+brush.goto(200,-125)
+brush.pendown()
+brush.color("blue")
+brush.goto(-200,125)
+brush.ht()
+
+
+
+
+
+
+
+window.exitonclick()
