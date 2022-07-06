@@ -11,7 +11,7 @@ brush = turtle.Turtle()
 brush.shape("arrow")
 brush.shapesize(1,1)
 brush.color("black")
-brush.speed(6)
+brush.speed(3)
 brush.width(3)
 # brush.ht()
 
