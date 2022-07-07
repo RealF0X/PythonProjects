@@ -1,0 +1,31 @@
+from operator import lt
+import random
+import turtle
+drawSquare = turtle.Screen()
+drawSquare.title("Random Squares")
+drawSquare.bgcolor("yellow")
+drawSquare.screensize(500,500)
+turtle.speed(5)
+turtle.width(2)
+colorList = ["blue","red","purple","green","black"]
+
+
+for i in range(100):
+    x = random.randint(-300,300)
+    y = random.randint(-300,300)
+    turtle.penup()
+    turtle.goto(x,y)
+    turtle.pendown()
+   
+    toolZel = random.randint(5,100)
+    zavieh = 90
+    entekhabRang = random.randint(0,len(colorList)-1)
+    turtle.color(colorList[entekhabRang])
+    
+    for j in range(4):
+        turtle.fd(toolZel)
+        turtle.lt(zavieh)
+
+
+
+turtle.exitonclick()
