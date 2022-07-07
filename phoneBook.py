@@ -20,9 +20,8 @@ while True :
         searchValue = False
         for i in phoneBook : 
             if userSearch == i.split(":")[0] or userSearch == i.split(":")[1] :
-                searchValue == True 
                 print(f"\nYour Search is {i} \n")
-            elif searchValue != True :
+            else :
                 print("\nNot Found\n") 
                 break
                      
