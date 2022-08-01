@@ -1,5 +1,5 @@
 
-from posixpath import split
+
 import tkinter as tk
 import tkinter.font as fnt
 
